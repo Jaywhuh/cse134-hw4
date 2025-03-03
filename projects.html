@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Jinwoong Huh">
+    <title>Jinwoong Huh - Portfolio</title>
+    <link href="images/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Résumé</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="project-page">
+            <h2><b><i>My Projects</i></b></h2>
+            <article class="project">
+                <h3>Expense Tracker</h3>
+                <div class="project-content">
+                    <picture>
+                        <source srcset="images/frugal.webp" type="image/webp">
+                        <source srcset="images/frugal-m.webp" media="(max-width: 768px)" type="image/jpeg">
+                        <img src="images/frugal.webp" alt="Screenshot of Expense Tracker" class="project-image">
+                    </picture>
+                    <div class="project-description">
+                        <p><b>Description:</b></p>
+                        <ul>
+                            <li>Created an expense tracker that can add, edit, and manage different expenses.</li>
+                            <li>Developed a full-stack web application collaborating with 10 team members.</li>
+                            <li>Implemented graphs based on different types of categorized expenses.</li>
+                            <li>Implemented a CI/CD pipeline for continuous testing using Eslint, Prettier, and HTML/CSS 
+                                validator.</li>
+                        </ul>
+                        <!-- Github icon from https://www.orioniconlibrary.com/icon/github-6092 -->
+                        <a href="https://github.com/cse110-fa22-group8/cse110-fa22-group8" title="View on GitHub">
+                            <img src="images/github_icon.png" alt="GitHub Repository" class="github-icon">
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <br>
+
+            <article class="project">
+                <h3>Leetcode Difficulty Predictor</h3>
+                <div class="project-content">
+                    <picture>
+                        <source srcset="images/decisiontree.webp" type="image/webp">
+                        <source srcset="images/decisiontree-m.webp" media="(max-width: 768px)" type="image/jpeg">
+                        <img src="images/decisiontree.webp" alt="Screenshot of Leetcode Difficulty Predictor" class="project-image">
+                    </picture>
+                    <div class="project-description">
+                        <p><b>Description:</b></p>
+                        <ul>
+                            <li>Developed a machine learning model to predict the difficulty level of Leetcode problems.</li>
+                            <li>Implemented three learning models — K-Nearest Neighbors (KNN), Decision Tree, and 
+                                Neural Network.</li>
+                            <li>Utilized scikit-learn in Python to predict difficulty level based on different machine learning 
+                                models</li>
+                        </ul>
+                        <!-- Github icon from https://www.orioniconlibrary.com/icon/github-6092 -->
+                        <a href="https://github.com/Jaywhuh/CSE151A_WIN24_GROUP" title="View on GitHub">
+                            <img src="images/github_icon.png" alt="GitHub Repository" class="github-icon">
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; <span>2025</span> Jinwoong Huh. All rights reserved.</p>
+        <address>
+            <a href="mailto:jaywhuh@gmail.com" class="footer-email">jaywhuh@gmail.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>

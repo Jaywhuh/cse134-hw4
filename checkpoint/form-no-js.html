@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Jinwoong Huh">
+    <title>Jinwoong Huh - Portfolio</title>
+    <link href="images/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Résumé</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>Get In Touch</h2>
+            <form action="https://httpbin.org/post" method="POST" enctype="application/x-www-form-urlencoded" class="contact-form">
+                <label for="name">Name:
+                    <input type="text" id="name" name="name" minlength="2" maxlength="50" required 
+                        pattern="^[a-zA-Z ,.'-]+$">
+                </label>
+                
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required>
+                </label>
+
+                <label for="message">Message:
+                    <textarea id="message" name="message" required minlength="1" maxlength="500"></textarea>
+                </label>
+                <output id="error-message" class="error-message"></output>
+                <output id="info-message" class="info-message"></output>
+
+                <input type="hidden" name="possible_bot" value="true">
+                <button type="submit" id="contact-button">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; <span>2025</span> Jinwoong Huh. All rights reserved.</p>
+        <address>
+            <a href="mailto:jaywhuh@gmail.com" class="footer-email">jaywhuh@gmail.com</a>
+        </address>
+    </footer>
+    
+
+</body>
+</html>
